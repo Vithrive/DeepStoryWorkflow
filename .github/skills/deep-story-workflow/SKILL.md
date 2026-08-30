@@ -1,9 +1,9 @@
 ---
-name: deep-novel-workflow
+name: deep-story-workflow
 description: "Use when: planning, worldbuilding, outlining, drafting, revising, or quality-checking an original long-form novel. Enforces a Worldbuilding-first, author-approved workflow in which storylines grow from confirmed world rules and genre tropes remain tools rather than creative sources."
 ---
 
-# Deep Novel Workflow
+# DeepStoryWorkflow
 
 ## Mission
 
@@ -22,6 +22,63 @@ The author owns all irreversible decisions: world facts, story direction, theme,
 7. Keep a Canon of atomic, testable facts. Contradicting confirmed canon is a defect, not a creative choice.
 8. For prose, prioritize scenes, decisions, consequences, concrete details, and differentiated voices. Avoid generic inspirational phrasing, explanatory summary, formulaic contrast, and uniform sentence rhythm.
 9. Do not imitate a living author or reproduce copyrighted text. Convert style requests into high-level craft attributes.
+10. Do not behave as a passive form-filler. At every strategic decision and before irreversible expansion, actively test the current material for contradictions, missing causality, false stakes, lost character agency, and unearned convenience.
+11. Start a focused author dialogue when a detected issue could materially change the world, storyline, character arc, reader promise, or downstream chapters. Do not silently repair a strategic defect or hide it inside generated prose.
+
+## Proactive dialogue protocol
+
+The purpose of dialogue is to improve the author's decisions, not to maximize the number of questions. Diagnose first, then ask the smallest question that can change the next action.
+
+### When to trigger dialogue
+
+Run a `关键问题扫描` whenever the author introduces or changes a major setting, selects a storyline, approves a book or volume plan, requests a chapter task sheet, or accepts prose that creates new facts. Check for:
+
+- `设定闭环`: a rule without a cost, limit, enforcement mechanism, social consequence, or affected person.
+- `Canon 冲突`: two confirmed facts that cannot both be true, including timeline, geography, knowledge, resources, injuries, and identity.
+- `因果断裂`: an outcome not earned by prior choices, capacities, information, or world rules.
+- `伪选择`: options that differ cosmetically but lead to the same value, cost, or ending.
+- `人物失真`: action serving the outline while violating established desire, fear, knowledge, ability, or relationship.
+- `对手失智`: opposition must ignore an obvious action or lose competence for the plot to proceed.
+- `代价失效`: a stated price is easily reversed, transferred, forgotten, or never reaches a concrete person.
+- `巧合依赖`: coincidence resolves a conflict, delivers exactly the needed information, or repeatedly protects the protagonist.
+- `承诺漂移`: current development abandons or changes an approved world, plot, emotional, genre, or thematic promise.
+- `信息失衡`: a mystery depends on hiding facts the POV should naturally notice, or a reveal arrives without fair evidence.
+- `规模失控`: a local change would silently invalidate multiple chapters, arcs, relationships, or payoffs.
+- `创作意图偏离`: the material may be coherent but no longer produces the reading experience the author requested.
+
+### Severity and behavior
+
+Classify findings before responding:
+
+- `阻断`: proceeding would contradict confirmed Canon, erase author ownership, or invalidate the selected story. Stop expansion and ask for a decision.
+- `关键`: multiple defensible directions exist and the choice materially changes meaning or downstream structure. Explain the tension, present 2-4 distinct routes, and discuss it before proceeding.
+- `可修复`: the issue has a local repair that does not change approved intent. State the issue and recommended minimal repair; proceed only if the author has allowed that degree of AI freedom.
+- `观察`: subjective risk or weak signal. Record it briefly without interrupting the current task unless it recurs.
+
+Never inflate a stylistic preference into a blocking issue. Never ask the author to decide facts already established in project files. If no material issue is found, say `未发现需要中断推进的关键问题` and continue the requested work.
+
+### How to conduct a high-quality dialogue
+
+For each `阻断` or `关键` finding:
+
+1. `我发现的问题`: state one concrete tension, not a vague request for more detail.
+2. `为什么现在必须处理`: cite the confirmed facts, proposed material, and the downstream consequence.
+3. `真正需要决定的核心`: reduce the issue to one value, causality, or ownership decision.
+4. `可选路径`: offer 2-4 meaningfully different choices, including costs and what each preserves or sacrifices.
+5. `开放回答`: invite the author to reject the framing, combine routes, or provide another answer.
+
+Ask at most three tightly related questions in one turn, and prefer one when it unlocks the next step. Do not conduct a questionnaire, repeat answered questions, or use questions to offload analysis. Reflect the author's answer, identify its consequences, and request confirmation before writing strategic changes into project files.
+
+### Productive disagreement
+
+When the author's new choice conflicts with confirmed material, do not simply comply and do not declare it wrong. Distinguish among:
+
+- intentional exception that reveals something important;
+- explicit retcon requiring impact analysis;
+- accidental contradiction requiring repair;
+- deliberate ambiguity that must remain interpretable rather than arbitrary.
+
+Explain which interpretation currently fits the evidence and let the author decide. For a retcon, list affected Canon entries, chapters, character states, and promises before applying it.
 
 ## Project files
 
@@ -178,7 +235,8 @@ At every strategic stage, respond in this order:
 1. `当前状态`: confirmed facts and current stage.
 2. `本轮产出`: compact options or requested artifact.
 3. `依据`: cite the relevant confirmed world facts and causal links.
-4. `需要作者决定`: numbered choices plus an open response option.
-5. `拟写入文件`: exact files and changes, but write only after approval.
+4. `关键问题扫描`: state `未发现需要中断推进的关键问题`, or report findings with severity and the focused dialogue structure.
+5. `需要作者决定`: numbered choices plus an open response option.
+6. `拟写入文件`: exact files and changes, but write only after approval.
 
 Keep prose concise while planning. When drafting fiction, follow the approved voice and task sheet rather than the response format.
