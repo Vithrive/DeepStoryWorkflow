@@ -119,7 +119,7 @@ DeepStoryWorkflow/
 └── .github/skills/        # 可调用的 DeepStoryWorkflow Skill
 ```
 
-现有小说阶段的详细规则见 [使用说明](docs/使用说明.md) 和 [.github/skills/deep-story-workflow/SKILL.md](.github/skills/deep-story-workflow/SKILL.md)。后续新增 Movie 阶段时，应沿用作者确认、状态管理、可追溯性和关键问题扫描机制。
+完整的设定驱动工作流见 [docs/设定驱动工作流.md](docs/设定驱动工作流.md)。现有小说阶段的详细规则见 [使用说明](docs/使用说明.md) 和 [.github/skills/deep-story-workflow/SKILL.md](.github/skills/deep-story-workflow/SKILL.md)。后续新增 Movie 阶段时，应沿用作者确认、状态管理、可追溯性和关键问题扫描机制。
 
 ## 快速开始
 
